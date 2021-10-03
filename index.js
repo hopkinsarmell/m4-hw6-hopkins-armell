@@ -21,7 +21,12 @@ function getPizzaOrder() {
   // HINT: You may wish to use .toLowerCase() and .trim()
   // if the user specified 'thick' crust, add thickCrustUpcharge
   // to pizza.cost
-  // YOUR CODE HERE
+  if (crust) {
+    pizza.crust = crust.toLowerCase().trim()
+  if (pizza.crust === 'thick') {
+    pizza.cost += thickCrustUpcharge
+    }
+  }
 
   var toppings = prompt("Please enter additional toppings (comma separated)")
   // HINT: prompt() will return an empty string "" if the user presses 'OK' without entering a value
