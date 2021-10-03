@@ -10,7 +10,7 @@ function getPizzaOrder() {
   alert("Hi, Thanks for ordering with Web to Pizza!")
   var pizza = {
     // set the 'cost' property to the basePrice
-    // YOUR CODE HERE
+    cost:basePrice
   }
 
   var crust = prompt(
